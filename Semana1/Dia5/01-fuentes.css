@@ -5,6 +5,7 @@
 
 * {
     margin: 0;
+    background-color: rgb(21, 21, 21);
 }
 
 @font-face {
@@ -101,13 +102,68 @@ a:hover {
 .tercer__parrafo {
     font: 16px "Teko-Medium";
     border: 1px solid #c00;
-    background: -webkit-linear-gradient(right, #1A98EF, #EF1AED, #FFFD2B);
+    background: 
+    -webkit-linear-gradient(right,
+        #1A98EF 70%, #FFFD2B 30%);
 }
 
 .btn_iniciar_session {
     margin-top: 30px;
     font-family: "Teko-Medium";
-    background: linear-gradient(90deg, #1A98EF, #EF1AED, #FFFD2B);
+    background: linear-gradient(90deg, 
+        #1A98EF, #EF1AED, #FFFD2B);
     border: none;
     color: #fff;
+}
+
+.cuarto__parrafo {
+    margin-top: 30px;
+    font-family: "Teko-Medium";
+    font-size: 16px;
+    border: 1px solid purple;
+    background: -webkit-radial-gradient(center, ellipse, #FF732B, #2BFF61);
+}
+
+/* 
+    Filter que puede hacer 
+    blur
+    grayscale
+    sepia
+    brigthness
+    invert
+    opacity
+    contrast
+    saturate
+    hue-rotate
+ */
+
+
+.primera_imagen {
+     filter: brightness(5)
+}
+
+.segunda_imagen {
+    /* 0.1 hasta el 1 */
+    filter: grayscale(1)
+}
+
+.tercer_imagen {
+    filter: sepia(1)
+}
+
+.cuarta_imagen {
+    /* 1px hasta 10px */
+    filter: blur(10px)
+}
+
+.quinta_imagen {
+    filter: invert(1)
+}
+
+.sexta_imagen {
+    filter: opacity(1)
+}
+
+.septima_imagen {
+    filter: contrast(0.5)
 }
