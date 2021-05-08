@@ -18,17 +18,32 @@ h1 {
 }
 
 .form-control {
+  margin-bottom: 5px;
+  margin-left: 10px;
   border: none;
   outline: none;
-  padding: 8px;
-  border: 1px solid #f17469;
-  border-bottom: 1px solid var(--color-primario);
+  padding: 8px 8px 8px 30px;
+  border: 1px dashed #f17469;
+  border-bottom: 3px solid var(--color-primario);
+  background-image: url("./../imagenesGlobal/icono_id.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 24px 24px;
+  border-radius: 5px;
+}
+
+/*cuando el input tiene el cursor dentro de sí*/
+
+.form-control:focus {
+  background-image: url("./../imagenesGlobal/icono_id_hover.png");
 }
 
 .cuadrado {
   height: 200px;
   width: 200px;
+  border-radius: 50%;
   background-color: var(--color-secundario);
+  padding: 15px;
 }
 
 /*tamaños*/
@@ -82,4 +97,10 @@ ancho ni alto definido*/
   width: 100px;
   height: 100px;
   background-color: #991123;
+}
+
+.imagen {
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
 }
