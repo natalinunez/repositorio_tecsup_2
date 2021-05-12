@@ -44,6 +44,7 @@ body {
   margin-top: 20px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .card span {
@@ -56,4 +57,23 @@ body {
   color: white;
   border-radius: 50%;
   font-size: 0.7rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.card img {
+  transition: all 0.3s ease;
+}
+
+.card:hover img {
+  filter: blur(2px);
+}
+
+.card:hover span {
+  top: 50%;
+  right: 50%;
+  /* transform: translate(0, -50%); */
+  /*Cuando usamos transform:translate, si las medidas
+  están en porcentaje, dicho porcentaje se basan en referencia
+  al ancho y alto del mismo elemento;*/
+  transform: translate(50%, -50%);
 }
