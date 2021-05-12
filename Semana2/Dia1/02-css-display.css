@@ -21,7 +21,38 @@ header {
   Sin embargo su espacio en el DOM es respetado*/
   /* display: block; => desapacere un elemento del DOM
   y su espacio es ocupado por los demás elementos*/
-  display: none;
+  /* display: none; */
+}
+
+.navegacion ul {
+  /* border: 1px solid blue; */
+}
+
+.navegacion ul li {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-right: 15px;
+  background-color: #a11477;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.navegacion ul li i {
+  transition: all 0.3s ease;
+}
+
+.navegacion ul li:hover a {
+  text-decoration: underline;
+}
+
+.navegacion ul li:hover i {
+  transform: rotate(45deg);
 }
 
 aside {
@@ -39,6 +70,6 @@ section, aside {
 
 section {
   background-color: #7269c8;
-  width: calc(100% - 250px);
+  width: calc(100% - 240px);
   height: calc(100vh - 60px);
 }
