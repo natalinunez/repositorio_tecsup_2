@@ -16,3 +16,9 @@
 - Obligatoriamente, debemos especificar, al menos 2 ejes de referencia
 - El elemento `absolute` se mueve con referencia al próximo padre directo que tenga `position:relative`
 - De no cumplirse el anterior punto, el padre de referencia, sería el elemento HTML
+
+## ```position:fixed;```
+
+- El elemento es posicionado con referencia al Viewport( el área de visualización de la página)
+- Es decir, si el scroll se mueve por ejemplo, el elemento se mantiene fijado con referencia al Viewport
+- Se puede anclar hasta con 4 puntos de referencia: top, left, right y bottom

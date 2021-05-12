@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+html {
+  /*
+  Propiedad para que los links internos
+  de una página hagan el  scroll 
+  con aceleración 
+  */
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background-color: #333;
@@ -76,4 +85,20 @@ body {
   están en porcentaje, dicho porcentaje se basan en referencia
   al ancho y alto del mismo elemento;*/
   transform: translate(50%, -50%);
+}
+
+.boton-fixed {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.boton-fixed a {
+  color: #eee;
 }
