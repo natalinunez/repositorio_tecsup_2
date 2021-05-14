@@ -33,4 +33,10 @@ body {
   justify-content: center;
   flex: 1;
   align-items: flex-start;
+  
+  /*Colocar las siguientes propiedades para
+  simular la apariencia de PINTEREST*/
+  /* flex-direction: column;
+  align-content: flex-start;
+  max-height: 900px; */
 }
