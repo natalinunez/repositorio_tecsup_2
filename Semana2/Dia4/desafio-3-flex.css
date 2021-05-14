@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ddd;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 400px;
+  height: 540px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0px 0px 10px #aaa; */
+  margin: 10px auto 0 auto;
+  overflow: hidden;
+  font-size: 16px;
+  color:#5e5b5a;
+  /* background-color: #ece2e4; */
+  /* border: 3px solid pink; */
+  display: flex;
+  flex-direction: column;
+}
+
+.card_inicio{
+    position: relative;
+    border-radius: 8px;
+    background-color: #f3ebed;
+    overflow: hidden;
+    /* border: 3px solid blue; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.card_img {
+    height: 200px;
+    background-color: white; 
+  /* border: 5px solid blue; */
+  /*background-color: yellow;*/
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.card__titulo__foto{
+    position: absolute;
+    top: 80px;
+    left:80px;
+    color: rgb(235, 223, 223);
+    font-size: 28px;
+}
+/* .card_img img {
+      height: 100px;
+      width: 500px;
+  } */
+.card__vuelo {
+  display: flex;
+  /* border: 2px solid green; */
+}
+.card__info__vuelo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 1.2rem; */
+  margin: 20px 0;
+  /* border: 1px solid red; */
+}
+
+.lista__vuelos {
+  /* border: 2px solid black; */
+  margin-top: 0;
+  padding-top: 0;
+  height: 230px;
+  font-size: 16px;
+  color:#5e5b5a;
+  border-radius: 8px;
+  /* border: 3px solid blue; */
+  border-radius: 8px;
+  background-color: #f3ebed;
+  /* overflow: hidden; */
+}
+
+.info_vuelo {
+  display: flex;
+  /* border: 3px solid #c90da9; */  
+  margin: 20px 0;
+}
+
+.icono_vuelo, .info__fecha, .info__costo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* border: 2px solid red; */
+}
+
+.info__fecha {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__costo{
+    display: flex;
+    flex-direction: column;    
+}
+
+.boton__book{
+    border-radius:5px;
+    padding: 4px 8px;
+    margin-top: 5px;
+    color: white;
+    background-color: orange;
+}
+
+.formato__costo{
+    color: #0e0c9b;
+    font-weight: bold;
+}
